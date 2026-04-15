@@ -11,6 +11,8 @@
     --color-bg: #1A1A1A;
     --color-surface: #212121;
     --color-gray: #A6A6A6;
+    --color-error: #D02224;
+    --color-line: #4D4D4D;
     --font-roboto: 'Roboto', sans-serif;
     --font-freeset: 'FreeSet', sans-serif;
 }
@@ -46,30 +48,30 @@ a {
 }
 
 .container {
-    max-width: 805px;
+    max-width: 568px;
     box-sizing: content-box;
     margin: 0 auto;
-    padding: 0 12px;
+    padding: 0 0.75rem;
 
     @media (min-width: 480px) {
-        padding: 0 16px;
+        padding: 0 1rem;
     }
 
-    @media (min-width: 768px) {
-        padding: 0 100px;
+    @media (min-width: 1280px) {
+        max-width: 805px;
     }
 }
 
 .main {
-    padding: 40px 0;
+    padding: 2.5rem 0;
     flex: 1;
 
     @media (min-width: 480px) {
-        padding: 48px 0;
+        padding: 3rem 0;
     }
 
     @media (min-width: 768px) {
-        padding: 64px 0;
+        padding: 4rem 0;
     }
 }
 

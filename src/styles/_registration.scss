@@ -1,0 +1,163 @@
+.registration {
+    margin-top: 2.5rem;
+
+    @media (min-width: 480px) {
+        margin-top: 3rem;
+    }
+
+    @media (min-width: 768px) {
+        margin-top: 4rem;
+    }
+
+    &__wrapper {
+        max-width: 568px;
+        margin: 0 auto;
+
+        @media (min-width: 1280px) {
+            max-width: 668px;
+        }
+    }
+
+    &__title {
+        margin: 0 auto 1.5rem auto;
+        text-align: center;
+        font-family: var(--font-freeset);
+        font-weight: 600;
+        font-size: 1.125rem;
+        line-height: 1.22;
+        text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.15);
+
+        @media (min-width: 768px) {
+           margin: 0 auto 3rem auto;
+           font-size: 2.5rem;
+           line-height: 1.1; 
+        }
+    }
+
+    &__form {
+        border-radius: 0.9375rem;
+        background-color: var(--color-light);
+        padding: 2.5rem 1.5rem;
+
+        @media (min-width: 768px) {
+            padding: 3rem 4rem;
+        }
+
+        &-field {
+            margin-bottom: 1rem;
+        }
+
+        &-label {
+            font-size: 0.875rem;
+            line-height: 1;
+            color: var(--color-secondary);
+        }
+
+        &-input {
+            outline: none;
+            appearance: none;
+            border: 1px solid var(--color-border);
+            border-radius: 0.3125rem;
+            width: 100%;
+            height: 2.5rem;
+            padding: 0.75rem;
+            color: var(--color-dark);
+            font-size: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        &-error-text {
+            font-size: 0.875rem;
+            line-height: 1.29;
+            color: var(--color-error);
+            display: none;
+        }
+
+        &-warning {
+            font-size: 0.875rem;
+            line-height:  1.29;
+            color: var(--color-dark);
+            background-color: var(--color-unactive);
+            border: 1px solid var(--color-error);
+            border-radius: 0.625rem;
+            padding: 1rem 1.5rem;
+            margin-top: 2rem;
+            display: none;
+        }
+
+        &-note {
+            font-size: 0.8125rem;
+            line-height:  1.29;
+            color: var(--color-disabled);
+            margin-top: 2rem;
+            
+            @media (min-width: 340px) {
+                font-size: 0.875rem;
+            }
+        }
+
+        &-agreement {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        &-checkbox {
+            appearance: none;
+            width: 1rem;
+            height: 1rem;
+            border: 1px solid var(--color-dark);
+            border-radius: 0.3125rem;
+            background-color: transparent;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        &-checkbox:checked {
+            border-color: var(--color-accent);
+            background-color: var(--color-accent);
+            background-image: url("data:image/svg+xml,%3csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.71267 0.190229C10.0604 0.471683 10.0977 0.962906 9.79618 1.28741L4.73667 6.73184C4.58648 6.89345 4.37161 6.99019 4.14261 6.99929C3.91361 7.0084 3.69071 6.92907 3.52634 6.77997L0.252534 3.81028C-0.0775067 3.5109 -0.0850247 3.01849 0.235742 2.71045C0.556508 2.40242 1.08409 2.3954 1.41413 2.69478L4.05548 5.09077L8.53713 0.268171C8.83868 -0.0563292 9.365 -0.091225 9.71267 0.190229Z' fill='%23EDF6E6' /%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &-checkbox:focus {
+            outline: none;
+            border-color: var(--color-accent);
+            box-shadow: 0 0 0 0.1rem rgba(105, 180, 46, 0.25);
+        }
+
+        &-checkbox-label {
+            font-size: 0.875rem;
+            line-height:  1.29;
+            color: var(--color-dark);
+
+            a {
+                text-decoration: underline;
+            }
+        }
+
+        &-submit {
+            border: none;
+            outline: none;
+            appearance: none;
+            cursor: pointer;
+            white-space: nowrap;
+            background-color: var(--color-accent);
+            font-size: 1rem;
+            line-height: 1;
+            color: var(--color-light);
+            padding: 0.75rem;
+            width: 100%;
+            border-radius: 0.3125rem;
+            margin-top: 2rem;
+        }
+
+        &-submit:disabled {
+            background-color: var(--color-unactive);
+            color: var(--color-disabled);
+            cursor: default;
+        }
+    }
+}
