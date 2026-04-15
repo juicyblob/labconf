@@ -132,6 +132,10 @@
       </div>
     </div>
 
+    <div class="background">
+      <img src="./src/images/matrix.png" alt="Матричный фон" class="background__img">
+    </div>
+
   </main>
 
   <footer class="footer">
@@ -226,14 +230,22 @@
     </div>
   </footer>
 
-  <div class="popup">
-    <div class="popup__overlay"></div>
-    <div class="popup__body">
-      <h3 class="popup__body-title">Регистрация прошла успешно!</h3>
-      <p class="popup__body-message"></p>
-      <div class="popup__body-buttons">
-        <button class="popup__body-btn">Хорошо</button>
+  <div class="pop-up">
+    <div class="pop-up__overlay"></div>
+    <div class="pop-up__body">
+      <h3 class="pop-up__body-title">Регистрация прошла успешно!</h3>
+      <p class="pop-up__body-message">
+        В течение 24 часов вы получите письмо с подтверждением регистрации.
+      </p>
+      <div class="pop-up__body-buttons">
+        <button class="pop-up__body-btn">Хорошо</button>
+        <button class="pop-up__body-btn_outline hidden">Обратиться в поддержку</button>
       </div>
+      <button class="pop-up__body-close">
+        <svg width="14" height="14">
+          <use href="#icon-close" />
+        </svg>
+      </button>
     </div>
   </div>
 

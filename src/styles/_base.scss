@@ -19,6 +19,7 @@
 
 html, body {
   height: 100%;
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -63,6 +64,7 @@ a {
 }
 
 .main {
+    position: relative;
     padding: 2.5rem 0;
     flex: 1;
 
@@ -75,6 +77,6 @@ a {
     }
 }
 
-.popup {
+.hidden {
     display: none;
 }
