@@ -54,7 +54,7 @@ npm run preview
 
 ## 📎 Демо
 
-👉 **[Live Demo](https://lab-conf.web.app)**
+👉 **[Live Demo](https://labconf.web.app/)**
 
 ---
 
